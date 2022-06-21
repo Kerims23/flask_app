@@ -11,15 +11,40 @@
   <div class="app">
  
     <div class="form-section">
-
+     
       <form action="/upload" method="post" enctype="multipart/form-data">
+        <h1 style="color:black">Will Louden</h1>
+ 
         <input type="file" name="file">
         <input type="submit" value="Upload">
         <br>
-        <input class="form-control mr-sm-2" type="search" placeholder="Search" name="q">
-        <button class="btn btn-outline-success my2 my-sm-0" type="submit">Search</button>
+        <input type="filters">
+        <h2 style="left: 5%;"> Filters</h2>
+        <table class="table">
+          <tbody>
+          <tr >
+            <td><a href="test">Filter by Alphabetical Order</a></td><br>
+          </tr>
+          <tr >
+            <td><a href="test">Filter by Date</a></td>
+          </tr>
+          <tr>
+            <td><a href="test">Filter by file type</a></td>
+          </tr>	
+          <tr >
+            <td><a href="test">Filter by class</a></td>
+          </tr>
+          </tbody>
+        </table>
+        <br>
+      
+        <h2 style="color: black;">Enter Email to recieve role</h2>
+        <input class="form-control mr-sm-2" type="search" placeholder="Enter Email" name="q">
+        <button class="btn btn-outline-success my2 my-sm-0" type="submit">Submit</button>
       </form>
     </div>
+
+   
 
     <div class="images-section">
       {% for image in images %}
@@ -30,5 +55,7 @@
     </div>
     
   </div>
+
+  
 </body>
 </html>
